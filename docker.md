@@ -1,5 +1,23 @@
 # Déploiement
 
+## Créer le répertoire `sources`
+
+```bash
+sudo mkdir /srv/env/geo-api/sources
+```
+
+## Donner les droits en écriture sur le répertoire `sources`
+
+```bash
+sudo chmod g+w /srv/env/geo-api/sources
+```
+
+### rendre l'utilisateur git owner de /srv/env/geo-api/sources
+
+```bash
+sudo chown -R git:users /srv/env/geo-api/sources
+```
+
 ## Copier les fichiers sources (geojson) sur le serveur
 
 ```bash
